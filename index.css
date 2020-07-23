@@ -1,221 +1,204 @@
-:root {
-  --fcrow: 400px;
-  --fccolumn: repeat(2, minmax(40vw, 1fr));
+/*=================================================================================START===============================================================================*/
+/*==============================================================================VARIABLES===============================================================================*/
+:root{
+  --fcrow:400px;
+  --fccolumn:repeat(2,minmax(40vw,1fr));
   --scrow: 250px;
-  --sccolumn: repeat(3, minmax(30vh, 1fr));
-  --tcrow: repeat(1, minmax(30vh, 1fr));
-  --wid: 100%;
+  --sccolumn:repeat(3,minmax(30vh,1fr));
+  --tcrow:repeat(1,minmax(30vh,1fr));
 }
+/*==============================================================================BODY SECTION STYLE======================================================================*/
+html{scroll-behavior: smooth;}
 
-body,
-html {
+body, html {
   height: 100%;
-  margin: 0 auto;
-}
-html{
-  scroll-behavior: smooth;
-}
-.shadow {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6) !important;
-}
-.webcont {
-  display: grid;
-  grid-template-columns: 150px auto 150px;
-}
-.webcont > * {
-  grid-column: 2;
-  min-width: 0;
-}
+  margin:0 auto;
 
-.webcont footer {
-  grid-column: 1/-1;
-  min-width: 0;
 }
+.shadow{box-shadow: 0 1rem 2rem rgba(0,0,0,0.6)!important;}
+/*==============================================================================CSS GRID===============================================================================*/
+.webcont{
+display: grid;
+grid-template-columns: 150px auto 150px;
 
-h2 {
-  font-family: sam;
-  font-weight: 900;
-  color: #2e1e0f;
-  text-align: center;
-  font-size: 300%;
-  margin-top: 4%;
-  margin-bottom: 4%;
 }
+.webcont > *{
+  grid-column:2;
+  min-width: 0;
+  }
+
+  .webcont footer{
+    grid-column:1/-1;
+    min-width: 0;
+    }
+/*==============================================================================HEADER CSS=============================================================================*/
+  h2{font-family:sam;
+    font-weight:900;
+    color: #2E1E0F;
+    text-align:center;
+    font-size:300%;
+    margin-top:4%;
+    margin-bottom:4%;}
+    /*==============================================================================BACKGROUND=========================================================================*/
 .bg {
-  background-image: url("background1.JPG");
-  height: 100%;
-  width: 100%;
+
+  background-image: url("Images/background1.JPG");
+  height:100%;
+  width:100%;
   background-repeat: repeat;
-}
+
+    }
 .top {
-  height: 60vh;
-  width: var(--wid);
+    height:60vh;
+    width:100%;
 
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
-    ),
-    url("one.jpg");
-  padding-top: 5.5%;
-}
-.lgbox {
-  height: 35vh;
-  width: 40vw;
-  border: 6px;
-  border-style: double;
-  border-color: #000000;
-  margin: 0 auto;
-}
-.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-right: 18%;
-  margin-left: 10%;
-}
-.lgboximg {
-  height: 22vh;
-  width: auto;
-  margin-top: 27px;
-  margin-right: 10px;
-}
-.lgcontent {
-  text-align: center;
-  line-height: 10px;
-  font-family: sam;
-  padding-top: 9%;
-  padding-left: 10%;
-  border-left: solid;
-  height: 25vh;
-  margin: 6% 0%;
-  font-weight: bolder;
-  border-color: #000000;
-}
-.lgcontent h1 {
-  font-size: 400%;
-  font-weight: 900;
-}
-.lgcontent p {
-  font-size: 120%;
-}
-.sliderbox {
-  box-shadow: black;
-}
+    background:  linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),url("Images/one.jpg");
+    padding-top: 5.5%;
+     }
 
-.sliderone {
-  grid-column: 2;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
+   .lgbox{
+     height: 35vh;
+     width: 40vw;
+     border: 6px;
+     border-style: double;
+     border-color: #000000;
+     margin: 0 auto;
+         }
 
-@font-face {
-  font-family: sam;
-  src: url("sam.TTF");
-}
-@font-face {
-  font-family: satisfy;
-  src: url("satisfy.TTF");
-}
-.content-end {
-  right: 100%;
-}
-.bg-light {
-  background-color: #e0ddcf !important;
-}
-.nav-bg {
-  font-family: sam;
-  font-size: 160%;
-  font-weight: bold;
-}
-a:-webkit-any-link {
-  color: #2e1e0f;
-}
-.navlink :hover {
-  color: #8c5e58;
-}
-.cardone {
-  font-family: satisfy;
-  text-align: center;
-  font-size: 150%;
-}
+   .box{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-right: 18%;
+     margin-left: 10%;
+       }
 
-.topimg {
-  height: 60vh;
-  width: auto;
-}
+   .lgboximg{
+     height: 22vh;
+     width: auto;
+     margin-top:27px;
+     margin-right: 10px;
+            }
 
-.firstcard {
-  display: grid;
-  grid-template-columns: (var(--fccolumn));
-  grid-auto-rows: (var(--fcrow));
-}
-.secondimg {
-  height: 45vh;
-  width: auto;
-}
+   .lgcontent{
+     text-align: center;
+     line-height: 10px;
+     font-family: sam;
+     padding-top: 9%;
+     padding-left: 10%;
+     border-left: solid;
+     height: 25vh;
+     margin:6% 0%;
+     font-weight: bolder;
+     border-color: #000000;
+             }
 
-.secondcard {
-  display: grid;
-  grid-template-columns: (var(--sccolumn));
-  grid-auto-rows: (var(--scrow));
-  grid-row-gap: 20px;
-}
+   .sliderbox{box-shadow: black;}
 
-.thirdimg {
-  height: 45vh;
-  width: 100%;
-}
-.thirdcard {
-  display: grid;
-  grid-template-columns: (var(--sccolumn));
-  grid-auto-rows: (var(--tcrow));
-  grid-row-gap: 20px;
-}
-.card-body {
-  padding: 0.6rem;
-}
-.card-body {
-  padding: 0.6rem;
-}
+     .sliderone{
+       grid-column: 2;
+       margin-top:5%;
+       margin-bottom: 5%;
+              }
+/*==============================================================================FONTS==================================================================================*/
+
+    @font-face {
+      font-family: sam;
+      src: url('Images/sam.TTF');
+               }
+
+    @font-face{
+        font-family:satisfy;
+        src: url('Images/satisfy.TTF');
+              }
+
+  /*==============================================================================NAV-BAR==============================================================================*/
+     .bg-light{background-color: #E0DDCF!important;}
+
+     .nav-bg{font-family:sam;
+             font-size:160%;
+             font-weight:bold;
+            }
+
+     a:-webkit-any-link {
+      color: #2E1E0F; }
+
+  .navlink :hover{color:#8C5E58;}
+
+  /*==============================================================================CARDS==================================================================================*/
+
+  .cardone{font-family:satisfy;
+            text-align:center;
+            font-size:150%;
+          }
+
+     .topimg{height:60vh;
+             width:auto;}
+
+     .firstcard{display:grid;
+       grid-template-columns:  (var(--fccolumn));
+                grid-auto-rows: (var(--fcrow));
+               }
+
+    .secondimg{
+      height:45vh;
+      width:auto;}
+
+    .secondcard{display:grid;
+                grid-template-columns:  (var(--sccolumn));
+                grid-auto-rows: (var(--scrow));
+                grid-row-gap:20px;
+               }
+
+    .thirdimg{height:45vh;
+              width:100%;}
+
+    .thirdcard{
+      display:grid;
+      grid-template-columns:  (var(--sccolumn));
+      grid-auto-rows: (var(--tcrow));
+      grid-row-gap:20px}
+
+    .card-body{padding:0.6rem}
+    .card-body{padding:0.6rem;}
+
+/*==============================================================================ANIMATION==================================================================================*/
 
 .slideanim {
-  visibility: hidden;
-  visibility: visible\9;
-}
-.slideanim.slide {
-  visibility: visible;
-  animation: slide 1s;
-}
-.slideanim::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+      visibility:hidden;
+      visibility:visible\9;
+           }
 
-.last {
-  height: 15vh;
-  width: 100%;
+  .slideanim.slide {
+      visibility: visible;
+      animation: slide 1s;
+                   }
 
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
-    ),
-    url("one.jpg");
-  padding-top: 6%;
-}
+  .slideanim::after {
+      content: "";
+      display: table;
+      clear: both;
+                    }
 
-@media only screen and(max-width: 990px) {
-  .top {
-    height: 40vh;
-  }
-}
+  @keyframes slide {
+      0% {
+          opacity: 0;
+          transform: translateY(50%);
+         }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+           }
+                   }
+
+/*=========================================================================FOOTER STYLE===============================================================================*/
+
+     .last{ height:15vh;
+      width:100%;
+
+      background:  linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),url("Images/one.jpg");
+      padding-top: 6%;}
+
+/*==============================================================================END==================================================================================*/
+
+/*==============================================================================SHOP WITH US CSS==================================================================================*/
