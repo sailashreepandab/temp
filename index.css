@@ -12,6 +12,9 @@ html {
   height: 100%;
   margin: 0 auto;
 }
+html{
+  scroll-behavior: smooth;
+}
 .shadow {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6) !important;
 }
