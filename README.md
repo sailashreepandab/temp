@@ -1,25 +1,10 @@
-Our website's aim is to help the small businesses that have gone out of business due to this pandemic.
-Our website named "Kraftify" is a website that allows users to register their business with us and our job is to promote their business. For registration,
-we have provided a "Register with us" option which when clicked, directs the user to a form in which they can register their business with us.
+Our website's aim is to help the small businesses that have gone out of business due to this pandemic, along with the fresh startups trying to acquire a postion in the market.
+Our Brand is known as "Kraftify", and is a website that allows users to register their business with us and our job is to promote their business. For registration,
+we have provided a "Join us" option which when clicked, directs the user to a form in which they can register their business with us.Once they have registered with us we promote their brand and at the same time increase their reach towards the consumers and make their products easily available,Because we have taken the initiative to bring india to every doorstep.
 
-Our landing page consists of advertisements of the products/shops who are a part of our community. There is a header which  consists of our logo and some
-designing. Then, there is a navbar which consists of various hyperlinks which directs the visitor to various sections of our website.
-There is a shop with us option in the navbar which allows the visitor to shop the products advertised on our website.
-The visitor is provided with two options when they visit the product page, they can either order the product for home delivery or if they live in
-the same city as the seller, they can themselves go and collect the order.
-Our website consists of a few animations like the slide-in animation, in which the sections slide into the webpage as the website is being scrolled.
-
-In the "Shop with us" section, we get to see the double navbar setup. The second navbar displays all the categories of the products being sold on our
-website. While the user hovers over these categories they are able to see the sub-categories. For example:-
-  categories -> Clothes -> Men's Wear -> Shirts/Trousers
-  Apart from the navbar, the shop with us section consists of advertisements from our registered users consisting of various discount offers given by them.
-
-  We also have a cart in our website which adds the selected products and adds the total cart amount in real-time. The cart is available in the navbar
-  section. A few animations have been added to the cart to make it more appealing.
-  We have also added a filter search engine in our website which will help the user in filtering the thing they are specifically looking for.
-
-  There is a sign-in/sign-up feature in our website which allows the user to login to save the products, addresses, name, contact number etc. for future reference.
-
-  The main file used for our website are index.html and index.css. There are a various others files also that are added into our website consisting of javascript, django and a few other html and css file and the images used in our website.
+Our landing page consists of advertisements of the products/shops who are a part of our community. By the first look anyone can make out that our core idea sticks close to the fact that india is capable of satisfying its own needs be it the idustry or our page's theme. Our intentions are depicted very clearly by our tagline itself, which is "Become vocal about local", Here we intend to convey our aim ,which being, making our consumers aware that the products they search for in various super-markets monopolised by international brands are already available for us and at the same time produced in india itself,retaining their quality too.In terms In terms of user feasibility our website is device friendly,i.e, it works on various screen devices and also has a variety of navigational links (be it internal or external) to guide our user throughout the page.
+There is a shop with us option in the navbar which allows the visitor to shop the products advertised on our website.We bring a new way to provide the users with the products, for users not residing in the same city as that of the manufacturer's or dealer's shop we provide them with home delivery, now for those who stay at the same location as that of the dealer they will be given 2 options be it "home delivery" or "pick up" from the shop.Coming to the payment part, we all know that online payments always comes with a risk, and many individual still are not able to execute online transaction due to various reasons and who does not want to confirm if their orderd product is in the perfect condition beforing paying? well we bring u with our never changing policy of PAY ON DELIVERY, providing 2 options for payment, be it cash or card.
+We are not those conventional websites that believes on solidity only we rather emphasise on making it visually attractive too, so be ready to view a variety of annimtions on various itteractions from the user. In our dedicated page displaying the shops and their products, we have applied a new way to view the cart which gets updated in real-time, we are also implimenting a new way to advertise the brands by using various animations and interactivity tools.We are providing with various categories of products like "Cloths", "self-care","Edibles","Home decor","Accessories".Navigation into categories and sub categories have been aided using a filter search bar.On top of all these features we also provide with user authentication in our page.Again we aim to "Become vocal about local".
+This website has been developed using HTML 5, CSS 3, Javascript ES6, Jquery, Bootstrap, Django, Sql and jinja.
 
    
