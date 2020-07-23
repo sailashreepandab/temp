@@ -1,4 +1,4 @@
-:root{
+/* :root{
   --col2:100px 1fr 100px;
   --col:repeat(2,1fr);
 }
@@ -152,15 +152,29 @@ height: 100vh;
   margin: 5% 5%;
 }
 .parallax {
-  /* The image used */
+
   background-image: url("https://thebarnexpress.com/wp-content/uploads/2016/10/slide-1.jpg");
-  /* Set a specific height */
+
 height: 120vh;
 width: 100vw;
 
-  /* Create the parallax scrolling effect */
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+/* Full-width input fields */
+/* Full-width input fields */
+.
+.theme{
+  background-color: aquamarine;
+  height: 40vh;
+  width: 80vw;
+}
+@media only screen and (max-width: 990px)
+{
+   .theme{
+     width: 40vw;
+   }
 }
