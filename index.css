@@ -105,7 +105,9 @@ grid-template-columns: 150px auto 150px;
         font-family:satisfy;
         src: url('satisfy.TTF');
     }
-  
+    .content-end{
+      right: 100%;
+    }
      .bg-light{background-color: #E0DDCF!important;}
      .nav-bg{font-family:sam;
              font-size:160%;

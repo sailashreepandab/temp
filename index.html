@@ -7,6 +7,7 @@
   <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="sign.css">
 <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -33,31 +34,94 @@
     </div>
   </header>
   <!-- Image and text -->
-<nav class="navbar navbar-light bg-light nav-bg sliderbox">
-  <a style="font-size:160%;"class="navbar-brand " href="#">
-    <img style="margin-top:8%;"src="logo.png" width="30" height="30" class="d-inline-block align-top " alt="" loading="lazy">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-bg">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a style="font-size:160%;"class="navbar-brand" href="#"><img style="margin-top:8%;"src="logo.png" width="30" height="30" class="d-inline-block align-top " alt="" loading="lazy">
     KRAFTIFY
   </a>
-  <ul class="nav justify-content-end navlink ">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">About Us &nbsp&nbsp&nbsp&nbsp •</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Shop With Us &nbsp&nbsp&nbsp&nbsp • </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Join Us &nbsp&nbsp&nbsp&nbsp • </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Sign-Up/Sign-In &nbsp&nbsp&nbsp&nbsp • </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Cart</a>
-    </li>
-
-
-  </ul>
+  <div class="collapse navbar-collapse content-end" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us &nbsp&nbsp&nbsp&nbsp •</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Shop With Us &nbsp&nbsp&nbsp&nbsp • </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Join Us &nbsp&nbsp&nbsp&nbsp • </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up/Sign-In &nbsp&nbsp&nbsp&nbsp • </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cart</a>
+      </li>
+    </ul>
+    
+  </div>
+  
 </nav>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <!-- backend-file -->
+  <form class="modal-content" action="/action_page.php"> 
+    <div class="container">
+      <div class="button-flex">
+      <button type="button" onclick="upshow()">Sign Up</button>
+      <button type="button" onclick="inshow()">Sign In</button>
+    </div>
+      <div id="#signup" class="signup">
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      
+     
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+      </div>
+      
+      <div id="signin">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+        
+       
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign In</button>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>
 <section class="webcont">
 <div id="carouselExampleCaptions" class="carousel slide sliderone shadow" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -432,6 +496,7 @@
 
 </footer>
 <script src="template.js"></script>
+<script src="sign.js"></script>
 </body>
 
 </html>
