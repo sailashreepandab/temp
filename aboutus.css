@@ -1,349 +1,75 @@
-<<<<<<< HEAD
-:root{
-  --col2:100px 1fr 100px;
-  --col:repeat(2,1fr);
-}
-header{
-  background-color: #CAD8DE;
-  text-align: center;
-}
-.centre{
-  width: 30vw;
-  height: 70vh;
-
-  background-image: url('bg1_.png');
-  background-repeat: no-repeat;
-  background-size: 1500px;
-  background-position: center;
-  margin: 0 auto;
-  display: inline-block;
-}
-.side{
-  width: 25vw;
-  height: 70vh;
-  background-image: url('side1.png');
-  background-repeat: no-repeat;
-  background-size: 1000px;
-  background-position: center;
-  display: inline-block;
-}
-.l{
-  float: left;
-}
-.r{
-  float: right;
-  transform: scaleX(-1);
-  }
-  .ads{
+.grid{
     display: grid;
-    grid-template-columns: var(--col);
-    grid-auto-rows: 50vh;
-    grid-gap: 10px;
-
-  }
-  .advertisments{
-    background-color: grey;
-
-  }
-  .cont{
-    display: grid;
-
-    grid-template-columns: var(--col2);
-
-  }
-  .cont > * {
+    grid-template-columns: 200px auto 200px;
+}
+.grid > *{
     grid-column: 2;
     min-width: 0;
-  }
-  @media screen and (max-width: 700px) {
-     :root{
-      --col:1fr;
-      --col2:50px 1fr 50px;
-    }
-  }
-
-  .slideanim {
-    visibility:hidden;
-    visibility:visible\9;
 }
-.slideanim.slide {
-    visibility: visible;
-    animation: slide 1s;
+.grid footer{
+    grid-column: 1 / -1;
 }
-.slideanim::after {
-
-    content: "";
-    display: table;
-    clear: both;
-}
-@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.section{
-  background-image: logo.png;
-  height: 500px;
-  width: 500px;
-  display: block;
-}
-.container{
-position: absolute;
-display: inline-block;
-align-items: stretch;
-border: black;
-width: 100vw;
-height: 100vh ;
-}
-.width{
-  width: 97vw;
-opacity: 0.5;
-height: 100vh;
-}
-.text-block {
-  position: absolute;
-  bottom:40%;
-  left: 20%;
-  color: 	#000000;
- padding: inherit;
-}
-
-@media screen and (max-width: 480px) {
-  .text-block {
-    position: absolute;
-    bottom:20rem;
-    right: 10rem;
-    color: 	#000000;
-    padding: inherit;
-  }
-  .text-block1 {
-    position: absolute;
-    bottom:20rem;
-    right: 10rem;
-    color: 	#000000;
-    padding: inherit;
-  }
-
-
-}
-.text-block1 {
-  position: absolute;
-  bottom:40%;
-  left: 20%;
-  color: 	#000000;
-  padding: inherit;
-}
-.menu-card{
-  position: relative;
-  margin: 20px;
-  margin-top: 20%;
-  color: black;
-  display: inline-block;
-  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5) ;
-}
-.sec-card{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 5% 5%;
-}
-.parallax {
-  /* The image used */
-  background-image: url("https://thebarnexpress.com/wp-content/uploads/2016/10/slide-1.jpg");
-  /* Set a specific height */
-height: 120vh;
-width: 100vw;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-=======
-/* :root{
-  --col2:100px 1fr 100px;
-  --col:repeat(2,1fr);
-}
-header{
-  background-color: #CAD8DE;
-  text-align: center;
-}
-.centre{
-  width: 30vw;
-  height: 70vh;
-
-  background-image: url('bg1_.png');
-  background-repeat: no-repeat;
-  background-size: 1500px;
-  background-position: center;
-  margin: 0 auto;
-  display: inline-block;
-}
-.side{
-  width: 25vw;
-  height: 70vh;
-  background-image: url('side1.png');
-  background-repeat: no-repeat;
-  background-size: 1000px;
-  background-position: center;
-  display: inline-block;
-}
-.l{
-  float: left;
-}
-.r{
-  float: right;
-  transform: scaleX(-1);
-  }
-  .ads{
+.container3{
     display: grid;
-    grid-template-columns: var(--col);
+    grid-template-columns: 2fr 1fr;
     grid-auto-rows: 50vh;
-    grid-gap: 10px;
-
-  }
-  .advertisments{
-    background-color: grey;
-
-  }
-  .cont{
+    grid-gap:50px ;
+}
+.container2{
     display: grid;
-
-    grid-template-columns: var(--col2);
-
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 50vh;
+    grid-gap:50px ;
+}
+.headings{
+    text-align: center;
+    font-family: sam;
+    font-weight: 900;
+    font-size: 350%;
+ }
+.who{
+    font-family: fantasy;
+    font-size: x-large;
+}
+.whoimg img{
+      height: 40vh;
+      width: 20vw;
+}
+.aimimg img{
+    height: 40vh;
+      width: 20vw;
+}
+.aim{
+    font-family: fantasy;
+    font-size: x-large;
+}
+.spacing{
+    margin-top: 5%;
+}
+@media only screen and (max-width:990px){
+  .container3{
+      grid-template-columns: 1fr;
+      grid-template-rows: 40vh auto;
   }
-  .cont > * {
-    grid-column: 2;
-    min-width: 0;
+  .grid{
+      grid-template-columns: 8px auto 12px;
   }
-  @media screen and (max-width: 700px) {
-     :root{
-      --col:1fr;
-      --col2:50px 1fr 50px;
-    }
+  .who{
+      font-size: larger;
   }
-
-  .slideanim {
-    visibility:hidden;
-    visibility:visible\9;
-}
-.slideanim.slide {
-    visibility: visible;
-    animation: slide 1s;
-}
-.slideanim::after {
-
-    content: "";
-    display: table;
-    clear: both;
-}
-@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.section{
-  background-image: logo.png;
-  height: 500px;
-  width: 500px;
-  display: block;
-}
-.container{
-position: absolute;
-display: inline-block;
-align-items: stretch;
-border: black;
-width: 100vw;
-height: 100vh ;
-}
-.width{
-  width: 97vw;
-opacity: 0.5;
-height: 100vh;
-}
-.text-block {
-  position: absolute;
-  bottom:40%;
-  left: 20%;
-  color: 	#000000;
- padding: inherit;
-}
-
-@media screen and (max-width: 480px) {
-  .text-block {
-    position: absolute;
-    bottom:20rem;
-    right: 10rem;
-    color: 	#000000;
-    padding: inherit;
+    .whoimg img{
+      height: 50vh;
+      width: 90vw;
   }
-  .text-block1 {
-    position: absolute;
-    bottom:20rem;
-    right: 10rem;
-    color: 	#000000;
-    padding: inherit;
-  }
-
-
-}
-.text-block1 {
-  position: absolute;
-  bottom:40%;
-  left: 20%;
-  color: 	#000000;
-  padding: inherit;
-}
-.menu-card{
-  position: relative;
-  margin: 20px;
-  margin-top: 20%;
-  color: black;
-  display: inline-block;
-  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5) ;
-}
-.sec-card{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 5% 5%;
-}
-.parallax {
-
-  background-image: url("https://thebarnexpress.com/wp-content/uploads/2016/10/slide-1.jpg");
-
-height: 120vh;
-width: 100vw;
-
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-/* Full-width input fields */
-/* Full-width input fields */
-.
-.theme{
-  background-color: aquamarine;
-  height: 40vh;
-  width: 80vw;
-}
-@media only screen and (max-width: 990px)
-{
-   .theme{
-     width: 40vw;
+  .aimimg img{
+    height: 50vh;
+      width: 90vw;
    }
+   .container2{
+    grid-template-columns: 1fr;
+    grid-template-rows: 65vh auto;
+  }
+  .aim{
+      font-size: large;
+  }
 }
->>>>>>> 952e2e70a21609505efbefd73234a80ebcf3b477

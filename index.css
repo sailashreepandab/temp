@@ -82,7 +82,7 @@ grid-template-columns: 150px auto 150px;
 
    .lgcontent{
      text-align: center;
-     line-height: 10px;
+     line-height: 20px;
      font-family: sam;
      padding-top: 9%;
      padding-left: 10%;
@@ -92,6 +92,14 @@ grid-template-columns: 150px auto 150px;
      font-weight: bolder;
      border-color: #000000;
              }
+    .lgcontentf{
+      font-size: 400%;
+      font-weight: 900;
+    }
+    .lgcontentp{
+      font-size: 120%;
+      font-weight: 600;
+    }
 
    .sliderbox{box-shadow: black;}
 
@@ -199,6 +207,35 @@ grid-template-columns: 150px auto 150px;
       background:  linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),url("Images/one.jpg");
       padding-top: 6%;}
 
-/*==============================================================================END==================================================================================*/
 
-/*==============================================================================SHOP WITH US CSS==================================================================================*/
+
+/*==============================================================================MEDIA QUERIES==================================================================================*/
+@media only screen and (max-width:480px){
+  .lgbox{
+       width: 45vh;
+  }
+  .top{
+    height: 50vh;
+    padding-top: 15%;
+  }
+  .lgboximg{
+    height: 15vh;
+    margin-top:46px;
+     margin-right: 8px;
+  }
+  .box{
+    margin-left: 5%;
+      }
+  .lgcontentf{
+        font-size: 265%;
+        font-weight: 900;
+      }
+  .lgcontentp{
+        font-size: 90%;
+        font-weight: 600;
+      }
+  .lgcontent{
+    margin-top: 10%;
+  }
+}
+/*==============================================================================END==================================================================================*/
