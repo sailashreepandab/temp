@@ -116,3 +116,8 @@ input[type=text], input[type=password] {
   flex-direction: row;
   justify-content: space-evenly;
 }
+ @media only screen and (max-width:480px){
+   .modal-content{
+     width: 80vw;
+   }
+ }
