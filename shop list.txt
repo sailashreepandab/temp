@@ -1,0 +1,16 @@
+shop list:
+  clothing:
+     Postfold
+     Flyppd
+  food:
+     karachi bakery
+     the tea shelf
+  accessories:
+     glint
+     closet 37
+  skin care:
+     preserva wellness
+     Mitti se
+  home decor:
+     Chumbak:MAgnifying home decor
+     Peachtree: Decorating Homes with furniture
