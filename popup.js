@@ -27,7 +27,7 @@ function update(element){
   var el = document.getElementById('popupsection');
   if(comp==='post')
   el.src= comp+".html";
-  else if(comp=='flyypd')
+  else if(comp=='flyppd')
     el.src= comp+".html";
   else if(comp=='karachi')
     el.src= comp+".html";
@@ -41,7 +41,7 @@ function update(element){
     el.src= comp+".html";
   else if(comp=='mitti')
     el.src= comp+".html";
-  else if(comp=='chumbak')
+  else if(comp=='limon')
     el.src= comp+".html";
   else if(comp=='peach')
     el.src= comp+".html";
