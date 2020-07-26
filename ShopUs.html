@@ -10,13 +10,18 @@
 <!--===============================================EXTERNAL CSS FILE LINK==========================================-->
 
 <link rel="stylesheet" type="text/css"href="sign.css">
-<link rel="stylesheet" type="text/css"href="search.css">
-
 <link rel="stylesheet" type="text/css" href="index.css">
 
-<link rel="stylesheet" href="clothing.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<link rel="stylesheet" href="popup.css">
 
 <link rel="stylesheet" type="text/css" href="ShopUs.css">
+
+
 
 <!--========================================================================BOOTSTRAP JS LINK=========================================================================-->
 <!-- JS, Popper.js, and jQuery -->
@@ -95,26 +100,26 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav justify-content-end navlink ">
-    <li class="nav-item">
-      <!--Links-->
-      <a class="nav-link" href="#">About Us &nbsp&nbsp&nbsp&nbsp •</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Shop With Us &nbsp&nbsp&nbsp&nbsp • </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Join Us &nbsp&nbsp&nbsp&nbsp • </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up/Sign-In &nbsp&nbsp&nbsp&nbsp • </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Contact Us">Contact Us &nbsp&nbsp&nbsp&nbsp • </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Cart</a>
-    </li>
-  </ul>
+          <li class="nav-item">
+            <!--Links-->
+            <a class="nav-link" href="aboutus.html">About Us &nbsp&nbsp&nbsp&nbsp •</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ShopUs.html">Shop With Us &nbsp&nbsp&nbsp&nbsp • </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="joinUs.html">Join Us &nbsp&nbsp&nbsp&nbsp • </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Up/Sign-In &nbsp&nbsp&nbsp&nbsp • </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact Us">Contact Us &nbsp&nbsp&nbsp&nbsp • </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart</a>
+          </li>
+        </ul>
   </div>
   <a style="font-size:160%;"class="navbar-brand " href="#">
     <img style="margin-top:8%;"src="Images/logo.png" width="30" height="30" class="d-inline-block align-top " alt="Brand Logo" loading="lazy">
@@ -178,54 +183,6 @@
     </div>
   </form>
 </div>
-<!--========================================================================second navbar=========================================================================-->
-
-<nav class="navbar navbar-expand-lg navbar-light ">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
-
-
-
-  
-
-
-
-
 
 
 <!--========================================================================CAROUSEL SECTION1=========================================================================-->
@@ -271,97 +228,266 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-<h2>My Phonebook</h2>
-
-  <input type="text" id="myInput" placeholder="Search for names.." title="Type in a name" onkeyup="myFunction()">
-
-  <ul id="myUL">
-    <li><a href="#">Adele</a></li>
-    <li><a href="#">Agnes</a></li>
-
-    <li><a href="#">Billy</a></li>
-    <li><a href="#">Bob</a></li>
-
-    <li><a href="#">Calvin</a></li>
-    <li><a href="#">Christina</a></li>
-    <li><a href="#">Cindy</a></li>
-  </ul>
-   
 </section>
 
 
-
+<!-------------------------------------------------------------------filter-------------------------------------------------------------------->
 
 
  <section class="maincont">
+ 
+  <section class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".clothing"><a href="#0" data-type="clothing">clothing</a></li>
+					<li class="filter" data-filter=".home"><a href="#0" data-type="home">Home Decor</a></li>
+					<li class="filter" data-filter=".accessories"><a href="#0" data-type="accessories">Accessories</a></li>
+					<li class="filter" data-filter=".edibles"><a href="#0" data-type="edibles">Edibles</a></li>
+					<li class="filter" data-filter=".care"><a href="#0" data-type="care">Self-Care</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
 
-<main class="grid">
-  <article>
-    <img src="..." alt="Sample photo">
-    <div class="text">
-      <h3>This is a card</h3>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      <button>Here's why</button>
-    </div>
-  </article>
-  <article>
-    <img src="..." alt="Sample photo">
-    <div class="text">
-      <h3>This is a card</h3>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      <button>Here's how</button>
-    </div>
-  </article>
-  <article>
-    <img src="..." alt="Sample photo">
-    <div class="text">
-      <h3>Card</h3>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      <button>Here's how</button></p>
-      <button>Read more</button>
-    </div>
-  </article>
-  <article>
-    <img src="..." alt="Sample photo">
-    <div class="text">
-      <h3>Card</h3>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      <button>Here's how</button></p>
-      <button>Just do it...</button>
-    </div>
-  </article>
-  <article>
-    <img src="..." alt="Sample photo">
-    <div class="text">
-      <h3>Card</h3>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      </p>
-      <button>Here's why</button>
-    </div>
-  </article>
-  <article>
-    <img src="/pix/samples/16l.jpg" alt="Sample photo">
-    <div class="text">
-      <h3>Sanity check</h3>
-      <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
-      <button>Stop here</button>
-    </div>
-  </article>
-</main>
+		<section class="cd-gallery">
+			<ul>
+				<li class="mix clothing shirts radio2 option3">
+				<img src="images/candles.jpg" alt="Image 1" class="prodimg">
+				<div class="prodinfo">
+					<p>Blue shirt</p>
+					<p>1200</p>
+				</div>
+				<div class="buttons">
+				<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+				<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="post">About Shop</button>
+			    </div>
+				</li>
+				<li class="mix home check2 radio2 option2"><img src="images/cake.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="chumbak">About Shop</button>
+					</div></li>
+				<li class="mix edibles check3 radio3 option1"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="karachi">About Shop</button>
+					</div></li>
+				<li class="mix clothing tops radio2 option4"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="flyppd">About Shop</button>
+					</div></li>
+				<li class="mix accessories check1 radio3 option2"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="glint">About Shop</button>
+					</div></li>
+				<li class="mix care check2 radio3 option3"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="preserva">About Shop</button>
+					</div></li>
+				<li class="mix care check2 radio2 option1"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="preserva">About Shop</button>
+					</div></li>
+				<li class="mix edibles check1 radio3 option4"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="tea">About Shop</button>
+					</div></li>
+				<li class="mix home check1 radio2 option3"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="peach">About Shop</button>
+					</div></li>
+				<li class="mix accessories check1 radio3 option2"><img src="images/cake.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="closet">About Shop</button>
+					</div></li>
+				<li class="mix clothing shirts radio2 option3"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="flyppd">About Shop</button>
+					</div></li>
+				<li class="mix home check2 radio2 option2"><img src="images/cake.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="chumbak">About Shop</button>
+					</div></li>
+				<li class="mix edibles check3 radio3 option1"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="karachi">About Shop</button>
+					</div></li>
+				<li class="mix clothing tops radio2 option4"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+					<p>Blue shirt</p>
+					<p>1200</p>
+				</div>
+				<div class="buttons">
+				<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+				<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="post">About Shop</button>
+				</div></li>
+				<li class="mix accessories check1 radio3 option2"><img src="images/cake.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="closet">About Shop</button>
+					</div></li>
+				<li class="mix care check2 radio3 option3"><img src="images/cake.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="mitti">About Shop</button>
+					</div></li>
+				<li class="mix care check2 radio2 option1"><img src="images/cake.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="mitti">About Shop</button>
+					</div></li>
+				<li class="mix edibles check1 radio3 option4"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="tea">About Shop</button>
+					</div></li>
+				<li class="mix home check1 radio2 option3"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="peach">About Shop</button>
+					</div></li>
+				<li class="mix accessories check1 radio3 option2"><img src="images/candles.jpg" alt="Image 1" class="prodimg">
+					<div class="prodinfo">
+						<p>Blue shirt</p>
+						<p>1200</p>
+					</div>
+					<div class="buttons">
+					<button type="button" class="btn btn-primary btn-lg">Add To Cart</button>
+					<button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('background').style.display='block',update(this)" style="width:auto;" title="glint">About Shop</button>
+					</div></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Search</h4>
+					
+					<div class="cd-filter-content">
+						<input type="search" placeholder="Try a category...">
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Check boxes</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".shirts" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Shirts</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".tops" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Tops</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+			
+
+				
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+	</section>
+ 
 </section>
 
+<div id="background" class="modal">
+  <span onclick="document.getElementById('background').style.display='none'" class="close" title="Close Modal">&times;</span>
 
+    <iframe src="index.html" class="pop-content" id="popupsection" ></iframe>
+</div>
 
 
 
@@ -587,10 +713,15 @@
 
 
 
-  <script src="ShopUs.js"></script>
 
+  <script src="sign.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="search.js"></script>
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+  <script src="popup.js"></script>
 
   
 
