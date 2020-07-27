@@ -1,3 +1,7 @@
+
+
+
+
 .grid{
     display: grid;
     grid-template-columns: 200px auto 200px;
@@ -28,8 +32,9 @@
     font-size: 350%;
  }
 .who{
-    font-family: fantasy;
-    font-size: x-large;
+    
+    font-family:Gabriola;
+    font-size:180%;
 }
 .whoimg img{
       height: 40vh;
@@ -40,9 +45,8 @@
       width: 20vw;
 }
 .aim{
-    font-family: fantasy;
-    font-size: x-large;
-}
+    font-family:Gabriola;
+    font-size:180%;}
 .spacing{
     margin-top: 5%;
 }
@@ -73,3 +77,6 @@
       font-size: large;
   }
 }
+h6
+{font-family:Gabriola;
+    font-size:60%;}

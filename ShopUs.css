@@ -25,3 +25,16 @@
     .maincont{grid-template-columns: 10px auto 10px;
                }
 }
+.footertext{font-size:90%;}
+.astyle{    background-color: #8C5E58;
+    color: #fff;
+    padding-top: 25px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+    opacity: 0.9;
+text-align:center;}
+
+
+
+/* color: #2E1E0F; */
